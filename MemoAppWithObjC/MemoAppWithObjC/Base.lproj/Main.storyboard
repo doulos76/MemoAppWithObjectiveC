@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Memo-->
         <scene sceneID="h0k-b7-a6e">
             <objects>
                 <tableViewController id="E8R-In-vVt" sceneMemberID="viewController">
@@ -32,7 +32,9 @@
                             <outlet property="delegate" destination="E8R-In-vVt" id="vNm-40-brD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="eQr-eE-m4l"/>
+                    <navigationItem key="navigationItem" title="Memo" id="eQr-eE-m4l">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AUG-ok-OIx"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOF-cT-f0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,8 +44,8 @@
         <scene sceneID="Bvd-Gw-v1c">
             <objects>
                 <navigationController id="w8t-Oy-Zy8" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rHI-4b-bUp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rHI-4b-bUp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
