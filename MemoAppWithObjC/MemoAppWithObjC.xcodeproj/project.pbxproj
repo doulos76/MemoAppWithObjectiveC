@@ -14,6 +14,7 @@
 		B5A3EE9D22BD91A1005653A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3EE9B22BD91A1005653A5 /* LaunchScreen.storyboard */; };
 		B5A3EEA022BD91A1005653A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EE9F22BD91A1005653A5 /* main.m */; };
 		B5A3EEA922BD982F005653A5 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEA822BD982F005653A5 /* Memo.m */; };
+		B5A3EEAC22BD9AE9005653A5 /* MemoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		B5A3EE9F22BD91A1005653A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5A3EEA722BD982F005653A5 /* Memo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
 		B5A3EEA822BD982F005653A5 /* Memo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		B5A3EEAA22BD9AE9005653A5 /* MemoListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListTableViewController.h; sourceTree = "<group>"; };
+		B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				B5A3EE9E22BD91A1005653A5 /* Info.plist */,
 				B5A3EE9F22BD91A1005653A5 /* main.m */,
 				B5A3EE9622BD91A0005653A5 /* MemoAppWithObjC.xcdatamodeld */,
+				B5A3EEAA22BD9AE9005653A5 /* MemoListTableViewController.h */,
+				B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */,
 			);
 			path = MemoAppWithObjC;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				B5A3EEA022BD91A1005653A5 /* main.m in Sources */,
 				B5A3EE9822BD91A0005653A5 /* MemoAppWithObjC.xcdatamodeld in Sources */,
 				B5A3EEA922BD982F005653A5 /* Memo.m in Sources */,
+				B5A3EEAC22BD9AE9005653A5 /* MemoListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
