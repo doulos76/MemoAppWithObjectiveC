@@ -22,7 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, strong) NSManagedObjectContext* mainContext;
 @property (strong, nonatomic) NSMutableArray* memoList;
 
+
 - (void) fetchMemo;
+-(void)addNewMemo:(NSString*)memo;
 
 @end
 
