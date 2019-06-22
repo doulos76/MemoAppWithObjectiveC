@@ -16,6 +16,7 @@
 		B5A3EEA922BD982F005653A5 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEA822BD982F005653A5 /* Memo.m */; };
 		B5A3EEAC22BD9AE9005653A5 /* MemoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */; };
 		B5A3EEAF22BDAC6C005653A5 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEAE22BDAC6C005653A5 /* ComposeViewController.m */; };
+		B5A3EEB222BDB57F005653A5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3EEB122BDB57F005653A5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListTableViewController.m; sourceTree = "<group>"; };
 		B5A3EEAD22BDAC6C005653A5 /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		B5A3EEAE22BDAC6C005653A5 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		B5A3EEB022BDB57F005653A5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B5A3EEB122BDB57F005653A5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */,
 				B5A3EEAD22BDAC6C005653A5 /* ComposeViewController.h */,
 				B5A3EEAE22BDAC6C005653A5 /* ComposeViewController.m */,
+				B5A3EEB022BDB57F005653A5 /* DetailViewController.h */,
+				B5A3EEB122BDB57F005653A5 /* DetailViewController.m */,
 			);
 			path = MemoAppWithObjC;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				B5A3EEAF22BDAC6C005653A5 /* ComposeViewController.m in Sources */,
 				B5A3EEA922BD982F005653A5 /* Memo.m in Sources */,
 				B5A3EEAC22BD9AE9005653A5 /* MemoListTableViewController.m in Sources */,
+				B5A3EEB222BDB57F005653A5 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
