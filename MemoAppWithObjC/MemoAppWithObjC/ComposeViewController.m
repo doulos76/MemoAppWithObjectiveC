@@ -7,10 +7,15 @@
 //
 
 #import "ComposeViewController.h"
+#import "Memo.h"
 
 @interface ComposeViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextView *memoTextView;
+
+
 - (IBAction)close:(id)sender;
+- (IBAction)save:(id)sender;
 
 
 @end
@@ -33,6 +38,14 @@
 */
 
 - (IBAction)close:(id)sender {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)save:(id)sender {
+  NSString* memo = self.memoTextView.text;
+  
+  Memo* newMemo = [[Memo alloc] initWithContent:memo];
+  [[Memo dummyMemoList] addObject:newMemo];
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
