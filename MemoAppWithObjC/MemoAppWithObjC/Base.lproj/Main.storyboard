@@ -64,16 +64,38 @@
             </objects>
             <point key="canvasLocation" x="504" y="151"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--메모 보기-->
         <scene sceneID="y6U-OF-SG2">
             <objects>
                 <viewController id="LKG-kl-IsO" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g4G-WP-jFf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71L-L7-NGl">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" id="wNK-3B-jp9"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jVM-4u-F0X">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="71L-L7-NGl" firstAttribute="bottom" secondItem="KIy-a5-GxC" secondAttribute="bottom" id="78I-oq-2SI"/>
+                            <constraint firstItem="jVM-4u-F0X" firstAttribute="top" secondItem="KIy-a5-GxC" secondAttribute="top" id="PPy-Sa-cA2"/>
+                            <constraint firstItem="71L-L7-NGl" firstAttribute="trailing" secondItem="KIy-a5-GxC" secondAttribute="trailing" id="YGh-7K-hdV"/>
+                            <constraint firstItem="KIy-a5-GxC" firstAttribute="trailing" secondItem="jVM-4u-F0X" secondAttribute="trailing" id="bDf-e0-v6c"/>
+                            <constraint firstItem="71L-L7-NGl" firstAttribute="leading" secondItem="KIy-a5-GxC" secondAttribute="leading" id="dTw-Uo-Ub6"/>
+                            <constraint firstItem="71L-L7-NGl" firstAttribute="top" secondItem="jVM-4u-F0X" secondAttribute="bottom" id="ljr-11-P79"/>
+                            <constraint firstItem="jVM-4u-F0X" firstAttribute="leading" secondItem="KIy-a5-GxC" secondAttribute="leading" id="tEe-u2-rLG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KIy-a5-GxC"/>
                     </view>
+                    <navigationItem key="navigationItem" title="메모 보기" id="vQf-EF-2UU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PsG-iQ-9aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
