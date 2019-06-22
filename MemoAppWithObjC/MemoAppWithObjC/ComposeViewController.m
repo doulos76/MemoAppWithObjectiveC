@@ -44,8 +44,6 @@
 - (IBAction)save:(id)sender {
   NSString* memo = self.memoTextView.text;
   
-  Memo* newMemo = [[Memo alloc] initWithContent:memo];
-  [[Memo dummyMemoList] addObject:newMemo];
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

@@ -9,6 +9,7 @@
 #import "MemoListTableViewController.h"
 #import "Memo.h"
 #import "DetailViewController.h"
+#import "DataManager.h"
 
 @interface MemoListTableViewController ()
 
@@ -21,7 +22,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   NSIndexPath* indexPath = [self.tableView indexPathForCell:(UITableViewCell*)sender];
   if (indexPath != nil) {
-    Memo* target = [[Memo dummyMemoList] objectAtIndex:indexPath.row];
+    Memo* target = [[[DataManager sharedInstance] memoList] objectAtIndex:indexPath.row];
     DetailViewController* vc = (DetailViewController*)segue.destinationViewController;
     vc.memo = target;
   }
@@ -29,6 +30,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  [[DataManager sharedInstance] fetchMemo];
   [self.tableView reloadData];
 }
 
@@ -49,14 +51,14 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [[Memo dummyMemoList] count];
+  return [[[DataManager sharedInstance] memoList] count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
   
-  Memo* target = [[Memo dummyMemoList] objectAtIndex:indexPath.row];
+  Memo* target = [[[DataManager sharedInstance] memoList] objectAtIndex:indexPath.row];
   cell.textLabel.text = target.content;
   cell.detailTextLabel.text = [self.formatter stringFromDate:target.insertDate];
   
