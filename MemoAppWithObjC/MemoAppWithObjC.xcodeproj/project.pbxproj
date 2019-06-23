@@ -59,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56FA88722BF9D7200413A4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3EEAA22BD9AE9005653A5 /* MemoListTableViewController.h */,
+				B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */,
+				B5A3EEAD22BDAC6C005653A5 /* ComposeViewController.h */,
+				B5A3EEAE22BDAC6C005653A5 /* ComposeViewController.m */,
+				B5A3EEB022BDB57F005653A5 /* DetailViewController.h */,
+				B5A3EEB122BDB57F005653A5 /* DetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B5A3EE8122BD91A0005653A5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B5A3EEA622BD97FD005653A5 /* Model */,
+				B56FA88722BF9D7200413A4E /* Controller */,
 				B5A3EE8D22BD91A0005653A5 /* AppDelegate.h */,
 				B5A3EE8E22BD91A0005653A5 /* AppDelegate.m */,
 				B5A3EE9322BD91A0005653A5 /* Main.storyboard */,
@@ -87,12 +101,6 @@
 				B5A3EE9E22BD91A1005653A5 /* Info.plist */,
 				B5A3EE9F22BD91A1005653A5 /* main.m */,
 				B5A3EE9622BD91A0005653A5 /* MemoAppWithObjC.xcdatamodeld */,
-				B5A3EEAA22BD9AE9005653A5 /* MemoListTableViewController.h */,
-				B5A3EEAB22BD9AE9005653A5 /* MemoListTableViewController.m */,
-				B5A3EEAD22BDAC6C005653A5 /* ComposeViewController.h */,
-				B5A3EEAE22BDAC6C005653A5 /* ComposeViewController.m */,
-				B5A3EEB022BDB57F005653A5 /* DetailViewController.h */,
-				B5A3EEB122BDB57F005653A5 /* DetailViewController.m */,
 				B5A3EEB322BDC00C005653A5 /* DataManager.h */,
 				B5A3EEB422BDC00C005653A5 /* DataManager.m */,
 			);
