@@ -6,6 +6,7 @@
 //  Copyright © 2019 dave76. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "DataManager.h"
 #import "Memo+CoreDataProperties.h"
 
@@ -31,12 +32,19 @@
   [self.memoList setArray:result];
 }
 
--(void)addNewMemo:(NSString*)memo {
+- (void)addNewMemo:(NSString*)memo {
   Memo* newMemo = [[Memo alloc] initWithContext:self.mainContext];
   newMemo.content = memo;
   newMemo.insertDate = [NSDate date];
   
   [self saveContext];
+}
+
+- (void)deleteMemo:(Memo*)memo {
+  if (memo != nil) {
+    [self.mainContext deleteObject:memo];
+    [self saveContext];
+  }
 }
 
 - (NSManagedObjectContext*)mainContext {

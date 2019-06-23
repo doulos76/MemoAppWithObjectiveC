@@ -8,11 +8,14 @@
 
 #import "DetailViewController.h"
 #import "ComposeViewController.h"
+#import "DataManager.h"
 
 @interface DetailViewController () <UITableViewDataSource>
 
 @property (strong, nonatomic) NSDateFormatter* formatter;
 @property (strong, nonatomic) IBOutlet UITableView *memoTableView;
+
+- (IBAction)deleteMemo:(id)sender;
 
 @end
 
@@ -64,4 +67,18 @@
  }
  */
 
+- (IBAction)deleteMemo:(id)sender {
+  UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"삭제 확인" message:@"메모를 삭제할까요?" preferredStyle:UIAlertControllerStyleAlert];
+  UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"삭제" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+    [[DataManager sharedInstance] deleteMemo:self.memo];
+    [self.navigationController popViewControllerAnimated:YES];
+  }];
+  [alert addAction:okAction];
+  
+  UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"취소" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+  }];
+  [alert addAction:cancelAction];
+  
+  [self presentViewController:alert animated:YES completion:nil];
+}
 @end
