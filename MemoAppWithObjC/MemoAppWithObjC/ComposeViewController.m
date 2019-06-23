@@ -51,7 +51,12 @@
 
 - (IBAction)save:(id)sender {
   NSString* memo = self.memoTextView.text;
-  [[DataManager sharedInstance] addNewMemo:memo];
+  if (self.editTarget != nil) {
+    self.editTarget.content = memo;
+    [[DataManager sharedInstance] saveContext];
+  } else {
+    [[DataManager sharedInstance] addNewMemo:memo];
+  }  
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

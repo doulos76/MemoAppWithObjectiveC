@@ -12,6 +12,7 @@
 @interface DetailViewController () <UITableViewDataSource>
 
 @property (strong, nonatomic) NSDateFormatter* formatter;
+@property (strong, nonatomic) IBOutlet UITableView *memoTableView;
 
 @end
 
@@ -37,6 +38,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   ComposeViewController* vc = [[segue.destinationViewController childViewControllers] objectAtIndex:0];
   vc.editTarget = self.memo;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  [self.memoTableView reloadData];
 }
 
 - (void)viewDidLoad {

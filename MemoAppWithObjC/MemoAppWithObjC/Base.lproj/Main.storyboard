@@ -139,6 +139,9 @@
                         <viewLayoutGuide key="safeArea" id="KIy-a5-GxC"/>
                     </view>
                     <navigationItem key="navigationItem" title="메모 보기" id="vQf-EF-2UU"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="jVM-4u-F0X" id="aGy-Uy-Cuz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PsG-iQ-9aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
